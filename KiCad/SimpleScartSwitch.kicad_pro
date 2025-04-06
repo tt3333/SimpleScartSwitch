@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.762,
-          "height": 1.524,
-          "width": 1.524
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -51,7 +51,13 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -171,7 +177,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -198,7 +206,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -216,17 +229,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      "global_label_dangling|1447800|1066800|1e62cf90-a380-4717-b1c1-7360f3908b41|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|1244600|406d22ca-a297-4fcd-81bb-c1981501beee|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|1422400|57d682da-e5a7-4847-a592-2fcbb46e61ef|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|1600200|163d4779-a9cb-4180-8a0c-0ae75b0f7ed2|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|355600|d434fc62-531e-4839-b138-c4124663518d|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|533400|a01b251d-4e73-4af2-9ae2-e3688a35a71a|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|711200|7e0555b2-604a-48e8-8c9e-8573e826a27c|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "global_label_dangling|1447800|889000|90058e24-84b7-42f0-93b9-3c91c3ed2fac|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c||",
-      "power_pin_not_driven|774700|939800|8b39f873-81cd-4a51-8a29-07d476b60ec0|00000000-0000-0000-0000-000000000000|/8b0182a6-2209-4860-9397-be1c7fa6e54c|/8b0182a6-2209-4860-9397-be1c7fa6e54c|"
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -497,11 +500,19 @@
       },
       {
         "netclass": "Bold",
+        "pattern": "Wide"
+      },
+      {
+        "netclass": "Bold",
         "pattern": "RGB1"
       },
       {
         "netclass": "Bold",
         "pattern": "RGB2"
+      },
+      {
+        "netclass": "Bold",
+        "pattern": "RGB"
       }
     ]
   },
